@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace wpf_mvvm_first_look.Models
 {
@@ -80,14 +82,21 @@ namespace wpf_mvvm_first_look.Models
         /// 
         public override bool Equals(object? obj)
         {
-            if (obj is User)
-            {
+            if (obj == null || !(obj is User))
+                return false;
+            else
                 return this.userId == ((User)obj).UserId;
-            }
-
-            return base.Equals(obj);
         }
 
+        public override int GetHashCode() => userId.GetHashCode() ^ username.GetHashCode();
+
+        public bool Like(User u)
+        {
+            return userId == u.UserId || 
+                username.Contains(u.username) || 
+                email.Contains(u.email) ||
+                phone.Contains(u.Phone);
+        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -98,5 +107,7 @@ namespace wpf_mvvm_first_look.Models
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+
+        
     }
 }
