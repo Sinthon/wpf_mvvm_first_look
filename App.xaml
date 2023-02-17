@@ -1,12 +1,15 @@
-﻿<Application x:Class="wpf_mvvm_first_look.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:wpf_mvvm_first_look"
-             xmlns:views="clr-namespace:wpf_mvvm_first_look.Views">
+﻿<Application
+    x:Class="wpf_mvvm_first_look.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:wpf_mvvm_first_look"
+    xmlns:vm="clr-namespace:wpf_mvvm_first_look.ViewModels">
     <Application.Resources>
-        <!--<ResourceDictionary.MergedDictionaries>
-            
-        </ResourceDictionary.MergedDictionaries>-->
-        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Common.xaml" />
+                <ResourceDictionary Source="/Styles/NavigationBar.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

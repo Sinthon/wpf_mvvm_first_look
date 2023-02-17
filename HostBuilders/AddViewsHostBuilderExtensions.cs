@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using wpf_mvvm_first_look.ViewModels;
+using wpf_mvvm_first_look.Views;
 
 namespace wpf_mvvm_first_look.HostBuilders
 {

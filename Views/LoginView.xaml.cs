@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace wpf_mvvm_first_look.Views
 {
     /// <summary>
-    /// Interaction logic for UserView.xaml
+    /// Interaction logic for LoginView.xaml
     /// </summary>
-    public partial class UserView : UserControl
+    public partial class LoginView : UserControl
     {
-        public UserView()
+        public LoginView()
         {
             InitializeComponent();
         }

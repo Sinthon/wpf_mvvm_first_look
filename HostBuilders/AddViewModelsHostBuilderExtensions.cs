@@ -15,8 +15,10 @@ namespace wpf_mvvm_first_look.HostBuilders
         {
             host.ConfigureServices(services =>
             {
+                services.AddTransient<LoginViewModel>();
                 services.AddTransient<MainViewModel>();
             });
+
             return host;
         }
     }

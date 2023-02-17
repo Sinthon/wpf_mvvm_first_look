@@ -14,7 +14,7 @@ namespace wpf_mvvm_first_look.HostBuilders
         {
             host.ConfigureAppConfiguration(conf =>
             {
-                conf.AddJsonFile("appsettings.json");
+                conf.AddJsonFile("./appsettings.json");
                 conf.AddEnvironmentVariables();
             });
 

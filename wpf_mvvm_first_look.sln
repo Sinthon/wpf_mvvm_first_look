@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf_mvvm_first_look", "wpf_mvvm_first_look.csproj", "{BF3B428D-DD2A-4A87-946B-ECA23FD1585D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf_mvvm_first_look.Core", "..\wpf_mvvm_first_look.Core\wpf_mvvm_first_look.Core.csproj", "{84730794-2F85-4887-B4DF-158C10687C73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BF3B428D-DD2A-4A87-946B-ECA23FD1585D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF3B428D-DD2A-4A87-946B-ECA23FD1585D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3B428D-DD2A-4A87-946B-ECA23FD1585D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84730794-2F85-4887-B4DF-158C10687C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84730794-2F85-4887-B4DF-158C10687C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84730794-2F85-4887-B4DF-158C10687C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84730794-2F85-4887-B4DF-158C10687C73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

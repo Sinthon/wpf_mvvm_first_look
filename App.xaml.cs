@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using wpf_mvvm_first_look.HostBuilders;
+using wpf_mvvm_first_look.Views;
 
 namespace wpf_mvvm_first_look
 {
@@ -26,6 +27,9 @@ namespace wpf_mvvm_first_look
         public static IHostBuilder CreateHostBuilder(string[] args = null)
         {
             return Host.CreateDefaultBuilder(args)
+                .AddConfiguration()
+                .AddDbContext()
+                .AddStores()
                 .AddViewModels()
                 .AddViews();
         }
